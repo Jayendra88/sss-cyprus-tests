@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "cy:run": "cypress run",
+    "test": "npm run cy:run",
     "start": "next start",
     "lint": "next lint"
   },
