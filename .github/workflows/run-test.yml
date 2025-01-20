@@ -65,6 +65,16 @@ jobs:
       - name: Node info
         run: node -v
 
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Build production bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+
       # - name: __e Dir
       #   run: ls /__e
 
@@ -73,7 +83,7 @@ jobs:
         with:
           # build: yarn cypress info
           # start: npm run cy:run
-          # wait-on: "http://localhost:3000"
+          wait-on: "http://localhost:3000"
           # wait-on-timeout: 120
           browser: chrome
           # record: true
