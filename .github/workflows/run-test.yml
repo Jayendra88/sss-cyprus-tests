@@ -109,7 +109,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           # build: yarn cypress info
-          # start: npm run cy:run
+          start: yarn cy:run
           wait-on: "https://smartstor-uat.sbd-nonprod.com/"
           # wait-on-timeout: 120
           browser: chrome
