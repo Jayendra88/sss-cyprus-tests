@@ -110,7 +110,7 @@ jobs:
         with:
           # build: yarn cypress info
           # start: npm run cy:run
-          wait-on: "http://localhost:3000"
+          wait-on: "https://smartstor-uat.sbd-nonprod.com/"
           # wait-on-timeout: 120
           browser: chrome
           # record: true
