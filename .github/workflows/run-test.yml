@@ -15,10 +15,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v6
-        with:
-          runTests: false
+      # - name: Cypress install
+      #   uses: cypress-io/github-action@v6
+      #   with:
+      #     runTests: false
       # # report machine parameters
       - run: npx cypress info
       # - run: node --version
@@ -29,10 +29,10 @@ jobs:
       # # - run: yarn build:ci
       # - run: npm run test
       
-      - name: Set Node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
+      # - name: Set Node.js 16.x
+        # uses: actions/setup-node@v3
+        # with:
+        #   node-version: 16.x
 
       - name: Run install
         uses: borales/actions-yarn@v4
